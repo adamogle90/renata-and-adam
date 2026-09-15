@@ -1,5 +1,16 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
 <meta name="robots" content="noindex, nofollow">
 <title>Renata &amp; Adam</title>
+<meta name="description" content="Save the date — Renata and Adam, Lucerne, Switzerland.">
+<meta property="og:title" content="Renata &amp; Adam">
+<meta property="og:description" content="Save the date — Lucerne, Switzerland.">
+<meta property="og:type" content="website">
+</head>
+<body>
 <style>
   /* Fonts are embedded, so the card renders identically anywhere — including offline. */
   @font-face{
@@ -21,7 +32,7 @@
     --ink:#22201c;
     --rule:#cfc6b6;
     --gold:#b9974f;
-    --cw:min(360px, 74vw, 40svh);
+    --cw:min(400px, 90vw, 44svh);
     --ch:calc(var(--cw) * 1.4069);
     --ew:calc(var(--cw) * 1.075);
     --eh:calc(var(--ch) * 1.055);
@@ -46,8 +57,11 @@
     color:var(--page-fg);
     font-family:'Cormorant Garamond', Georgia, 'Times New Roman', serif;
     display:flex; flex-direction:column; align-items:center; justify-content:center;
-    padding:16px; padding-block:20px;
+    padding:10px; padding-block:14px;
     overflow:hidden;
+  }
+  @media (min-width: 560px){
+    body{padding:16px; padding-block:20px}
   }
   body::before{
     content:''; position:fixed; inset:0; pointer-events:none;
@@ -401,3 +415,6 @@
   card.addEventListener('click', function(){ if(opened && !busy) doFlip(); });
 })();
 </script>
+
+</body>
+</html>
